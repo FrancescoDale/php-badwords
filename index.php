@@ -26,6 +26,9 @@ $paragraph = "SpaceX inaugurò la produzione di veicoli di lancio con il Falcon 
             <h2 class="text-center mt-4 mb-4">Lunghezza del paragrafo : </h2>
             <p> <?php echo strlen($paragraph) ?> caratteri </p>
 
+            <h2 class="text-center mt-4 mb-4">Applicazione della censura</h2>
+            <p> <?php echo str_replace() ?> </p>
+
         </div>
 
     </body>
