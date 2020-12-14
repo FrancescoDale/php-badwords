@@ -1,6 +1,9 @@
 <?php
 
+$badword = $_GET['badword'];
+
 $paragraph = "SpaceX inaugurò la produzione di veicoli di lancio con il Falcon 1, il quale venne progettato e fabbricato tra il 2008 e il 2009.È un razzo orbitale a due stadi che usa ossigeno liquido e RP-1 per entrambi gli stadi: il primo è spinto da un unico motore di classe Merlin e il secondo da un unico razzo di classe Kestrel. Il veicolo è stato lanciato per cinque volte, riuscendo a raggiungere l'orbita durante il quarto tentativo, nel settembre 2008, con della zavorra al posto del carico utile.In sostituzione del Falcon 1 venne pianificato anche un lanciatore denominato Falcon 5, ma il suo sviluppo è stato interrotto in favore dei Falcon 9.";
+
 
 ?>
 
@@ -27,7 +30,7 @@ $paragraph = "SpaceX inaugurò la produzione di veicoli di lancio con il Falcon 
             <p> <?php echo strlen($paragraph) ?> caratteri </p>
 
             <h2 class="text-center mt-4 mb-4">Applicazione della censura</h2>
-            <p> <?php echo str_replace('Falcon', '***', $paragraph) ?> </p>
+            <p> <?php echo str_replace($_GET["badword"], '***' , $paragraph); ?> </p>
 
         </div>
 
