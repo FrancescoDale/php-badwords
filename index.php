@@ -30,7 +30,7 @@ $paragraph = "SpaceX inaugurò la produzione di veicoli di lancio con il Falcon 
             <p> <?php echo strlen($paragraph) ?> caratteri </p>
 
             <h2 class="text-center mt-4 mb-4">Applicazione della censura</h2>
-            <p> <?php echo str_replace($_GET["badword"], '***' , $paragraph); ?> </p>
+            <p> <?php echo str_replace($_GET['badword'], '***' , $paragraph); ?> </p>
 
         </div>
 
